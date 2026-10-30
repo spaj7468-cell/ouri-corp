@@ -174,7 +174,8 @@ section.blk{ padding:clamp(56px,9vh,110px) 0 0 }
 .plink--soon:hover{ transform:none; border-color:var(--line) }
 
 /* ---------- команда ---------- */
-.team{ display:grid; grid-template-columns:1fr 1fr; gap:var(--gap); margin-top:6px }
+.team{ display:grid; grid-template-columns:repeat(auto-fit,minmax(min(100%,260px),1fr));
+  gap:var(--gap); margin-top:6px }
 .member{ border:1px solid var(--line); border-radius:var(--r); background:var(--surface); padding:clamp(20px,3vw,30px) }
 .member__ava{
   width:74px; height:74px; border-radius:50%; border:1px solid var(--line2);
